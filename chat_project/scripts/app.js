@@ -10,7 +10,7 @@ newChatForm.addEventListener('submit', e => {
     e.preventDefault();
     const message = newChatForm.message.value.trim();
     chatroom.addChat(message)
-        .then((data) => {
+        .then(() => {
             newChatForm.reset()
         })   
         .catch(err => console.log(err));
